@@ -13,6 +13,7 @@
 				 smartparens
 				 nodejs-repl
 				 exec-path-from-shell
+				 rainbow-delimiters
 				 )  "Default packages")
 
 (setq package-selected-packages tcstory/packages)
@@ -43,5 +44,6 @@
 
 (load-theme 'monokai t)
 
+(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 
 (provide 'init-packages)
