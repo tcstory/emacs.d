@@ -17,5 +17,6 @@
 (scroll-bar-mode -1)
 (setq cursor-type 'bar)
 (setq inhibit-splash-screen 1)
+(setq ring-bell-function 'ignore)
 
 (provide 'init-better-defaults)
