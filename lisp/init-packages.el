@@ -8,12 +8,11 @@
 
 ;;add whatever packages you want here
 (defvar tcstory/packages '(
-				 company
 				 monokai-theme
-				 smartparens
 				 nodejs-repl
 				 exec-path-from-shell
 				 rainbow-delimiters
+                 org-download
 				 )  "Default packages")
 
 (setq package-selected-packages tcstory/packages)
@@ -35,12 +34,6 @@
   (exec-path-from-shell-initialize))
 
 
-
-(global-company-mode t)
-
-;; smartparens
-(require 'smartparens-config)
-(add-hook 'emacs-lisp-mode-hook #'smartparens-mode)
 
 (load-theme 'monokai t)
 
