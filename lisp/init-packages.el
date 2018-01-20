@@ -13,6 +13,8 @@
 				 exec-path-from-shell
 				 rainbow-delimiters
                  org-download
+                 all-the-icons
+                 neotree
 				 )  "Default packages")
 
 (setq package-selected-packages tcstory/packages)
@@ -34,9 +36,11 @@
   (exec-path-from-shell-initialize))
 
 
+(setq neo-theme (if (display-graphic-p) 'icons 'arrow))
 
 (load-theme 'monokai t)
 
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 
 (provide 'init-packages)
+
