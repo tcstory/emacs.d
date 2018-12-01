@@ -5,7 +5,7 @@
 
 (setq-default org-download-image-dir "~/my_doc/assets/")
 (setq org-agenda-files '("~/my_doc"))
-
+(add-hook 'org-mode-hook 'toggle-truncate-lines)
 (setq org-log-done 'time)
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-ca" 'org-agenda)
