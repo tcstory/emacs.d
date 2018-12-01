@@ -9,12 +9,9 @@
 ;;add whatever packages you want here
 (defvar tcstory/packages '(
 				 monokai-theme
-				 nodejs-repl
-				 exec-path-from-shell
 				 rainbow-delimiters
                  org-download
                  all-the-icons
-                 neotree
 				 )  "Default packages")
 
 (setq package-selected-packages tcstory/packages)
